@@ -1,4 +1,9 @@
 <?php
+define('COMPOSER_PATH', realpath('vendor'));
+require_once COMPOSER_PATH . '/autoload.php';
+$dotenv = Dotenv\Dotenv::create(__DIR__);
+$dotenv->load();
+
 /**
  * CodeIgniter
  *
